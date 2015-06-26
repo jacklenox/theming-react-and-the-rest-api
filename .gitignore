@@ -1,0 +1,10 @@
+# Files
+style.css
+themingreactrestapi.js
+*.css.map
+
+# Folders
+node_modules
+.sass-cache
+
+*.codekit
