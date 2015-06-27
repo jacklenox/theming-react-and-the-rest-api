@@ -1,0 +1,1 @@
+<?php get_header(); ?><div id="page"><div id="loop"><article><h1><?php the_title(); ?></h1></article></div></div><?php get_footer(); ?>

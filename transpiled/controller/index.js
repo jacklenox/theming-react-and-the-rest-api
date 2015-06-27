@@ -11,7 +11,7 @@ var React = require( 'react' ),
 var Site = require( '../site' );
 
 
-var Controller = React.createClass({
+var Controller = React.createClass({displayName: "Controller",
 
 	componentDidMount: function() {
 		
@@ -26,7 +26,7 @@ var Controller = React.createClass({
 				.get( url )
 				.end( function( err, res ) {
 					data = JSON.parse( res.text );
-					self.setState({ component: <Site data={ data } /> });
+					self.setState({ component: React.createElement(Site, {data:  data }) });
 				});
 
 		});
@@ -40,7 +40,7 @@ var Controller = React.createClass({
 				.get( url )
 				.end( function( err, res ) {
 					data = JSON.parse( res.text );
-					self.setState({ component: <Site data={ data } /> });
+					self.setState({ component: React.createElement(Site, {data:  data }) });
 				});
 		});
 
@@ -49,7 +49,7 @@ var Controller = React.createClass({
 	},
 
 	getInitialState: function() {
-		return { component: <div /> };
+		return { component: React.createElement("div", null) };
 	},
 
 

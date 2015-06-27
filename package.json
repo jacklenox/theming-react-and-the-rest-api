@@ -11,9 +11,14 @@
   "devDependencies": {
     "browserify": "^10.2.4",
     "gulp": "^3.9.0",
+    "gulp-file": "*",
     "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-react": "*",
+    "gulp-rename": "*",
+    "page": "^1.6.3",
     "react": "^0.13.3",
     "reactify": "^1.1.1",
+    "superagent": "^1.2.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }
